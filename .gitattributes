@@ -1,2 +1,64 @@
-# Auto detect text files and perform LF normalization
+# ═══════════════════════════════════════════════════════════════════════════════
+# Payrrol Automation - .gitattributes
+# Normaliza finais de linha e define atributos de arquivos
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ─── AUTO - Detectar e normalizar automaticamente ───────────────────────────────
 * text=auto
+
+# ─── PYTHON - Text files, LF (Unix) ────────────────────────────────────────────
+*.py text eol=lf
+*.pyw text eol=lf
+*.pyx text eol=lf
+*.pyi text eol=lf
+
+# ─── JSON - Text files, LF ────────────────────────────────────────────────────
+*.json text eol=lf
+*.jsonc text eol=lf
+
+# ─── MARKDOWN - Text files, LF ────────────────────────────────────────────────
+*.md text eol=lf
+*.markdown text eol=lf
+README.md text eol=lf
+LICENSE text eol=lf
+CHANGELOG.md text eol=lf
+
+# ─── SHELL SCRIPTS - Text files, LF ───────────────────────────────────────────
+*.bash text eol=lf
+*.sh text eol=lf
+*.zsh text eol=lf
+
+# ─── WINDOWS BATCH - Text files, CRLF ─────────────────────────────────────────
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ─── CONFIG FILES - Text files, LF ────────────────────────────────────────────
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+.env* text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# ─── BINARY FILES - Não normalizar ────────────────────────────────────────────
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.exe binary
+*.dll binary
+*.so binary
+*.pyc binary
+
+# ─── DOCUMENTAÇÃO ─────────────────────────────────────────────────────────────
+*.txt text eol=lf
+*.rst text eol=lf
