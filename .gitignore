@@ -1,0 +1,109 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Payrrol Automation - .gitignore
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ─── SEGURANÇA - Arquivos sensíveis que NUNCA devem ser versionados ───────────
+# Chave de criptografia local (contém dados sensíveis da máquina)
+.secret.key
+
+# Credenciais Google OAuth2
+credentials.json
+token.json
+
+# Dados de funcionários (contém emails)
+funcionarios.json
+
+# Assinatura pessoal
+assinatura.png
+
+# ─── DADOS GERADOS - Saída do processamento ──────────────────────────────────
+# Pasta principal com holerites processados
+Holerites/
+output/
+temp/
+
+# ─── PYTHON - Cache e arquivos compilados ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ─── AMBIENTES VIRTUAIS ─────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ─── VARIÁVEIS DE AMBIENTE ──────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── STREAMLIT ───────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+.streamlit/logger.log
+.streamlit/__pycache__/
+
+# ─── IDE / EDITOR ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# ─── IDE - PyCharm ──────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ─── TESTES ─────────────────────────────────────────────────────────────────
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.coverage
+
+# ─── LOGS ───────────────────────────────────────────────────────────────────
+*.log
+*.logs
+debug-logs/
+
+# ─── ARQUIVOS TEMPORÁRIOS ───────────────────────────────────────────────────
+*.tmp
+*.bak
+*.backup
+temp/
+tmp/
+*.temp
