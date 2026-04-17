@@ -101,15 +101,6 @@ streamlit run app.py
 
 ---
 
-## 💡 Future Improvements
-
-* API version (FastAPI)
-* Database integration
-* Cloud storage (S3 / Azure Blob)
-* Better PDF layout detection (AI / OCR)
-
----
-
 ## 👨‍💻 Author
 
 Developed for automating HR workflows and improving operational efficiency.
