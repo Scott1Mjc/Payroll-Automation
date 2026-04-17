@@ -80,7 +80,7 @@ streamlit run app.py
 4. Organizes files into folders:
 
    ```
-   Payrrolls / Year / Month / Employee / Type
+   Payrolls / Year / Month / Employee / Type
    ```
 5. Sends emails automatically with attachments
 
