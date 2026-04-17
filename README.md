@@ -1,4 +1,4 @@
-# Payrroll Automation
+# Payroll Automation
 
 Automates the process of splitting, organizing, and sending payroll (holerite) PDFs to employees via email.
 
@@ -22,14 +22,23 @@ This project was built to eliminate repetitive manual work in HR routines, reduc
 ## Project Structure
 
 ```
-payrroll-automation/
-│
-├── app.py
+Payroll Automation/
+├── app.py                  # Main entrypoint
+├── requirements.txt
+├── .gitignore
 ├── core/
-├── utils/
-├── data/
-├── assets/
-└── output/
+│   ├── constants.py        # Constants and mappings
+│   ├── crypto.py           # Password encryption
+│   ├── storage.py          # JSON read/write
+│   ├── pdf_processor.py    # PDF splitting and saving
+│   └── email_sender.py     # Sending via Gmail API
+├── ui/
+│   ├── sidebar.py          # Employee sidebar
+│   ├── tab_split.py        # Tab 1 — Split PDF
+│   ├── tab_email.py        # Tab 2 — Send Emails
+│   └── tab_files.py        # Tab 3 — Generated Files
+└── utils/
+    └── string_helpers.py   # String helper functions
 ```
 
 ---
@@ -48,8 +57,8 @@ payrroll-automation/
 ## Installation
 
 ```bash
-git clone https://github.com/Scott1Mjc/Payrroll-Automation
-cd Payrroll-Automation
+git clone https://github.com/Scott1Mjc/Payroll-Automation
+cd Payroll-Automation
 pip install -r requirements.txt
 ```
 
